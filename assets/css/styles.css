@@ -980,6 +980,10 @@ img {
   justify-self: flex-end;
 }
 
+.contact__socials {
+  margin: auto;
+}
+
 .project__social {
   font-size: 1.25rem;
   margin-right: var(--mb-1-5);
