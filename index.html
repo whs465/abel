@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize css-->
+    <!-- <link rel="stylesheet" href="./assets/css/normalize.css" /> -->
+    <!-- unicons icon line css -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Responsive Portfolio Website</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <img id="logo" class="nav__logo" src="./assets/img/atdark.png" alt="" />
+
+        <!--  menu -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contact me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <!--  !menu -->
+
+        <div class="nav__btns">
+          <!-- theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- !header -->
+
+    <main class="main">
+      <!-- home -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="tel:0913657555"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="fa fa-phone"></i>
+              </a>
+              <a
+                href="sms://0988129649?body=Hi%20Abel%20"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="fa fa-commenting"></i>
+              </a>
+              <a
+                href="https://telegram.me/Yabelo_168"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="fa fa-telegram"></i>
+              </a>
+              <a
+                href="https://wa.me/251988129649?text=Hello Abel"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="fa fa-whatsapp"></i>
+              </a>
+            </div>
+
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewbox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="20"
+                    y="18"
+                    xlink:href="./assets/img/abel.png"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm Abel 👋</h1>
+              <h3 class="home__subtitle">I'm a tennis coach in Addis</h3>
+              <p class="home__description">
+                I live, eat and dream tennis. I'm a strategic player and I want
+                to share all my tennis knowledge with you.
+              </p>
+              <!-- <a href="#contact" class="button button--flex">
+                            Contact me <i class="uil uil-message button__icon"></i>
+                        </a> -->
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- !home -->
+
+      <!-- about -->
+      <section class="about section" id="about">
+        <h2 class="section__title">About me</h2>
+        <span class="section__subtitle">My introduction</span>
+
+        <div class="about__container container grid">
+          <img
+            src="./assets/img/about1.jpg"
+            alt="image_about"
+            class="about__img"
+          />
+          <div class="about__data">
+            <p class="about__description">
+              I've been playing tennis since I was a young kid and grew up
+              around the top players in my country. Now, I alternate my time
+              between studying Economics and playing and coaching tennis, where
+              I'm focused on helping children and adults develop the necessary
+              skills for tennis success.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- !about -->
+
+      <!-- services-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What I offer</span>
+
+        <div class="services__container container grid">
+          <!-- service 1 -->
+          <div class="services__content">
+            <div>
+              <i class="fa fa-users services__icon"></i>
+              <h3 class="services__title">
+                Adult Tennis <br />
+                Lessons
+              </h3>
+            </div>
+
+            <span
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
+            >
+              View more
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  Adult Tennis <br />
+                  Lessons
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Learn the game from the ground up.</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Develop new skills.</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Work on your tennis fitness.</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>And plenty more.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- !service 1 -->
+
+          <!-- service 2 -->
+          <div class="services__content">
+            <div>
+              <i class="fa fa-rocket services__icon"></i>
+              <h3 class="services__title">Getting<br />Started</h3>
+            </div>
+
+            <span
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
+            >
+              View more
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">Getting<br />Started</h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Easily learn some simple tennis skills.</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Pick up the basics of forehand and backhand strokes.</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      Give my Tennis Drills or Cardio Tennis sessions a try.
+                      <br />
+                      More focus on fitness than technique – ideal for players
+                      of any level.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- !service 2 -->
+
+          <!-- service 3 -->
+          <div class="services__content">
+            <div>
+              <i class="fa fa-child services__icon"></i>
+              <h3 class="services__title">
+                Tennis <br />
+                for Kids
+              </h3>
+            </div>
+
+            <span
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
+            >
+              View more
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  Tennis for <br />
+                  Kids
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      Physical activity in tennis classes for kids is very
+                      beneficial for the health and well-being of children.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Tennis prepares children for life through sport.</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      Tennis training teaches children discipline and
+                      dedication, which helps them to reach their goals in sport
+                      and in life.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Tennis helps develop a winning mindset for kids.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- !service 3 -->
+          <!-- service 4 -->
+          <div class="services__content">
+            <div>
+              <i class="fa fa-heartbeat services__icon"></i>
+              <h3 class="services__title">
+                And lastly<br />
+                Tennis is...
+              </h3>
+            </div>
+
+            <span
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
+            >
+              View more
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  And lastly<br />
+                  Tennis is...
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>a non-impact sport.</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      a great way to meet people and spend time with friends.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      not dependent on youth or strength – you can play for a
+                      lifetime or start the game at any age.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>helpful to reduce stress.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- !service 4 -->
+        </div>
+      </section>
+      <!-- !services-->
+
+      <!-- project in mind -->
+      <section class="project section">
+        <div class="project__bg">
+          <div class="project__container container grid">
+            <div class="project__data">
+              <h2 class="project__title">So, you want to play tennis?</h2>
+              <p class="project__description">
+                No matter whether you are a beginner or an accomplished player,
+                contact me now and let's have a ☕ in my tennis club and talk
+                about your tennis needs.
+              </p>
+              <div class="project__socials">
+                <a
+                  href="tel:0913657555"
+                  target="_blank"
+                  class="project__social"
+                >
+                  <i class="fa fa-phone"></i>
+                </a>
+                <a
+                  href="sms://0988129649?body=Hi%20Abel%20"
+                  target="_blank"
+                  class="project__social"
+                >
+                  <i class="fa fa-commenting"></i>
+                </a>
+                <a
+                  href="https://telegram.me/Yabelo_168"
+                  target="_blank"
+                  class="project__social"
+                >
+                  <i class="fa fa-telegram"></i>
+                </a>
+                <a
+                  href="https://wa.me/251988129649?text=Hello Abel"
+                  target="_blank"
+                  class="project__social"
+                >
+                  <i class="fa fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+
+            <img
+              src="./assets/img/project1.png"
+              alt="image_project"
+              class="project__img"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- !project in mind -->
+
+      <!-- testimonial -->
+      <section class="hidden testimonial section">
+        <h2 class="section__title">Testimonial</h2>
+        <span class="section__subtitle">My clients saying</span>
+
+        <div class="testimonial__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- testimonial 1 -->
+            <div class="testimonial__content swiper-slide">
+              <div class="testimonial__data">
+                <div class="testimonial__header">
+                  <img
+                    src="./assets/img/testimonial1.jpg"
+                    alt="image_testimonial_1"
+                    class="testimonial__img"
+                  />
+
+                  <div>
+                    <h3 class="testimonial__name">Sara Smith</h3>
+                    <span class="testimonial__client">Client</span>
+                  </div>
+                </div>
+
+                <div>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                </div>
+              </div>
+
+              <p class="testimonial__description">
+                I get a good impression, I carry out my project with all the
+                possible quality and attention and support 24 hours a day.
+              </p>
+            </div>
+            <!-- !testimonial 1 -->
+
+            <!-- testimonial 2 -->
+            <div class="testimonial__content swiper-slide">
+              <div class="testimonial__data">
+                <div class="testimonial__header">
+                  <img
+                    src="./assets/img/testimonial2.jpg"
+                    alt="image_testimonial_2"
+                    class="testimonial__img"
+                  />
+
+                  <div>
+                    <h3 class="testimonial__name">Matt Robinson</h3>
+                    <span class="testimonial__client">Client</span>
+                  </div>
+                </div>
+
+                <div>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                </div>
+              </div>
+
+              <p class="testimonial__description">
+                I get a good impression, I carry out my project with all the
+                possible quality and attention and support 24 hours a day.
+              </p>
+            </div>
+            <!-- !testimonial 2 -->
+
+            <!-- testimonial 3 -->
+            <div class="testimonial__content swiper-slide">
+              <div class="testimonial__data">
+                <div class="testimonial__header">
+                  <img
+                    src="./assets/img/testimonial3.jpg"
+                    alt="image_testimonial_3"
+                    class="testimonial__img"
+                  />
+
+                  <div>
+                    <h3 class="testimonial__name">Raul Harris</h3>
+                    <span class="testimonial__client">Client</span>
+                  </div>
+                </div>
+
+                <div>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                  <i class="uil uil-star testimonial__icon-star"></i>
+                </div>
+              </div>
+
+              <p class="testimonial__description">
+                I get a good impression, I carry out my project with all the
+                possible quality and attention and support 24 hours a day.
+              </p>
+            </div>
+            <!-- !testimonial 3 -->
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination swiper-pagination-testimonial"></div>
+        </div>
+      </section>
+      <!-- !testimonial -->
+
+      <!-- contact me -->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div class="about__data">
+            <p class="contact__description">
+              Don't hesitate to call me, or text me through sms, Whatsapp or
+              Telegram. You can also often find me at Bole 19 Tennis Club.
+            </p>
+          </div>
+
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle"
+                  >Bole 19 Tennis Club.<br />Coordinates (copy & paste in any
+                  map): <strong>8.996232, 38.779101</strong></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !contact me -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <!-- <div>
+            <h1 class="footer__title">Abel Tennis</h1>
+            <span class="footer__subtitle">Tennis Coach</span>
+          </div> -->
+          <img src="./assets/img/at.png" alt="image_about" class="footer__img"
+        </div>
+        <p class="footer__copy">&copy;2021 Addis Ababa ❤️ Ethiopia</p>
+      </div>
+    </footer>
+    <!-- !footer -->
+
+    <!-- scroll top -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!-- !scroll top -->
+
+    <!-- swiper js -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
