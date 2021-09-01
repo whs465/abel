@@ -982,12 +982,13 @@ img {
 
 .contact__socials {
   margin: auto;
+  text-align: center;
 }
 
 .project__social {
   font-size: 1.25rem;
   margin-right: var(--mb-1-5);
-  color: var(--first-color);
+  color: var(--text-color-light);
 }
 
 .project__social:hover {
