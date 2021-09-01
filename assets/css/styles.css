@@ -987,11 +987,21 @@ img {
 
 .project__social {
   font-size: 1.25rem;
-  margin-right: var(--mb-1-5);
+  margin: var(--mb-0-5);
   color: var(--text-color-light);
 }
 
 .project__social:hover {
+  color: var(--first-color-alt);
+}
+
+.contact__social {
+  font-size: 1.25rem;
+  margin: var(--mb-0-5);
+  color: var(--first-color);
+}
+
+.contact__social:hover {
   color: var(--first-color-alt);
 }
 
